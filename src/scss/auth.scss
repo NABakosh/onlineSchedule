@@ -1,0 +1,120 @@
+.Auth{
+    animation: fadeIn 0.8s ease-in-out;
+    padding-bottom:40px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    .tab{
+        position: relative;
+        margin-top:50px;
+        width: 570px;
+        height: 92px;
+        background: #D9D9D9;
+        border-radius: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        button{
+            position: relative;
+            height: 100%;
+            border: none;
+            border-radius: 40px;
+            z-index: 3;
+            background-color: transparent;
+            font-size:40px;
+            &:first-child{
+                width: 40%;
+            }
+            &:last-child{
+                width: 60%;
+            }
+        }
+       
+        .tab-background {
+            transform: translateX(-170px);
+            position: absolute;
+            height: 100%;
+            width: 40%;
+            border-radius: 40px;
+            background: #4A9BCA;
+            transition: transform 0.5s ease-in-out, width 0.5s ease-in-out;
+
+            &.register {
+                transform: translateX(113px);
+                width: 60%;
+            }
+}
+    }
+    form{
+        overflow: hidden;
+        will-change: max-height, opacity;
+        max-height: 650px;
+        padding: 60px 130px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 70px;
+        align-items: center;
+        background: #FFFFFF;
+        box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.25), inset -4px -4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 45px;
+        transition: max-height 0.5s ease-in-out, padding 0.5s ease-in-out;
+            &.visible{
+    max-height: 730px;
+}
+        h6{
+            font-size: 50px;
+            font-weight: 500;
+        }
+        .show-conf{
+            display: block; 
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        input{
+                padding-left: 30px;
+            width: 457px;
+            height: 77px;
+            background: #D9D9D9;
+            border: none;
+            border-radius: 40px;
+            font-size: 30px;
+            &:focus{
+                outline: none;
+            }
+            }
+            div{
+                display: flex;
+                flex-direction: column;
+                gap: 55px;
+            }
+        button{
+        width: 191px;
+        height: 65px;
+        font-size: 30px;
+        border: none;
+        border-radius: 40px;
+        background-color: #4A9BCA;
+        flex-shrink: 0;
+        transition: all 0.3s ease-in-out;
+        &.expanded{
+            height: 70px;
+            width: 380px;
+        }
+        
+        }
+    }
+}
+ @keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

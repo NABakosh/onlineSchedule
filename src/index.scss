@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+.App{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  header{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    .logo{
+      display: flex;
+      align-items: center;
+      text-align: center;
+    }
+    nav{
+      width: auto;
+      display: flex;
+      align-items: center;
+      gap: 80px;
+      ul{
+        display: flex;
+        list-style: none;
+        gap: 10px;
+        .day{
+          font-size: 20px;
+          background-color: #91A4AF;
+          padding: 15px;/* Rectangle 9 */
+          box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+          border-radius: 19px;
+          
+         &.weekend{
+          background-color: #F4A49C;
+          &.current{
+            background: linear-gradient(180deg, #E9786C 19.5%, #E99A92 100%) !important;
+
+         }
+        }
+        }
+      }
+      button{
+        padding: 15px 40px;
+        box-shadow: inset -1px -1px 4px rgba(0, 0, 0, 0.25), inset 4px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 40px;
+        font-size: 17px;
+        border: none;
+        cursor: pointer;
+        transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+        background-color: #4A9BCA;
+        &:active {
+          transform: scale(0.95);
+          border: 1px solid red;
+          box-shadow: 3px 2px 5px rgba(0, 0, 0, 0.2);
+          }
+          a{
+            text-decoration: none;
+            color: black;
+            &:visited{
+              color: black;
+            }
+          }
+      }
+    }
+  }
+  article{
+    position: relative;
+    margin-top:50px ;
+    padding-bottom: 50px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    h3{
+      position: absolute;
+      left: 44.3%;
+      padding: 20px 25px;
+      font-size: 25px;
+      font-weight: 500;
+      background-color: #D2DBDF;
+      box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 35px;
+    ;
+    }
+    div{
+        position: relative;
+      input{
+        height: 70px;
+        width: 300px;
+        font-size: 20px;
+        background: #D9D9D9;
+        border: none;
+        border-radius: 45px;
+        padding-left:60px;
+        z-index: 1;
+      }
+      &::before{
+        content: '';
+        top: 25%;
+        left: 5%;
+        position: absolute;
+        width: 36px;
+        height: 34px;
+        background: url(../public/assets/search.svg) no-repeat center;
+        z-index: 2;
+        
+      }
+    }
+  }
+  main{
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    .table{
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .head{
+      
+      width: 155px;
+      height: 110px;
+      padding: 0 0 5px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: linear-gradient(180deg, #91A4AF 0%, #82A1B4 100%);
+      box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 30px;
+
+      h5{
+        font-size: 42px;
+        font-weight: 400;
+      }
+    }
+  .body{
+    padding: 10px 0;
+    display: flex;
+    width: 155px;
+    background: linear-gradient(180deg, #91A4AF 0%, #82A1B4 100%);
+      box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 30px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      .body-block{
+        width: 100%;
+        height: 91px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid black; 
+      }
+      p{
+        text-align: center;
+        font-size: 42px;
+        font-weight: 400;
+      }
+      a{
+        width: 100%;
+        text-align: center;
+        font-size: 24px;
+        font-weight: 400;
+      }
+  }
+  }
+  footer{
+    padding: 50px;
+    a{
+      font-size: 22px;
+    }
+  }
+}
+.time-column{
+   background: linear-gradient(90deg, #D9D9D9 0%, #BBBBBB 100%) !important;
+ }
+.weekend-column{
+  background: linear-gradient(180deg, #E7B8B3 0%, #F4A49C 100%) !important;
+}
+.current{
+           background: linear-gradient(180deg, #4A9BCA 0%, #357194 227.68%) !important;
+         }
+         
+.notFound{
+
+}
