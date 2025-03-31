@@ -1,0 +1,43 @@
+header {
+	width: 100%;
+	height: auto;
+	padding-top: 55px;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	nav {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 15px;
+		h2 {
+			font-weight: 500;
+			line-height: 1.3;
+		}
+	}
+}
+.week-days {
+	padding: 12px 48px;
+	border: 1px solid var(--primary-content);
+	border-radius: var(--br);
+	ul {
+		list-style: none;
+		display: flex;
+		gap: 10px;
+		font-size: 30px;
+	}
+}
+.login-btn {
+	display: flex;
+	gap: 25px;
+	button {
+		width: 170px;
+		height: 56px;
+		font-size: 22px;
+		color: var(--secondary-text);
+		border-radius: var(--br);
+		ius: 100px;
+		border: none;
+		background-color: var(--primary-content);
+	}
+}

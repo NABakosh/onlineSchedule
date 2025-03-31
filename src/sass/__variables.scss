@@ -1,0 +1,14 @@
+
+:root {
+	--primary-bg: #f5f5dc;
+	--primary-text: #222;
+	--primary-content: #810d1a;
+	--secondary-text: #f1f1f1;
+	--br: 100px;
+	--table-bg: #f8f8e5;
+}
+
+[data-theme='dark'] {
+	--primary-bg: #222;
+	--primary-text: #f1f1f1;
+}
